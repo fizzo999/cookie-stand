@@ -68,8 +68,6 @@ var Lima = {
 }
 
 var storeLocations = [Seattle, Tokyo, Dubai, Paris, Lima];
-
-
 for (var j = 0; j < storeLocations.length; j++) {
   for (var i = 0; i < hoursOfOperation.length; i++) {
     var customers = storeLocations[j].numOfCustomers();
@@ -79,33 +77,38 @@ for (var j = 0; j < storeLocations.length; j++) {
     storeLocations[j].totalCookiesPerDay += cookiesThisHour;
   }
 }
-// console.log(Seattle.cookiesPerHourList);
+
+
+console.log(Seattle.cookiesPerHourList);
 // console.log(Paris.cookiesPerHourList);
 // console.log(Dubai.cookiesPerHourList);
 // console.log(Tokyo.cookiesPerHourList);
 // console.log(Lima.cookiesPerHourList);
-// console.log(Seattle.totalCookiesPerDay);
+console.log(Seattle.totalCookiesPerDay);
+
+
+
+
+
+
 
 // The worflow we want to do
 
 // Maybe we can create a function that does this???
 var divElement = document.createElement('div'); // => <div></div>
-var h2Element = document.createElement('h2'); // => <h2></h2>
-// var divElement = document.createElement('div'); // => <div></div>
-
+var tableElement = document.createElement('table'); // => <div></div>
 for (var l = 0; l < storeLocations.length; l++) {
 
-  var ulElement = document.createElement('ul'); // <ul></ul>
+  var trElement = document.createElement('tr'); // <h2></h2>
   for (var k = 0; k < storeLocations[l].cookiesPerHourList.length; k++) {
-    var liElement = document.createElement('li'); // <li></li>
-    ulElement.appendChild(liElement); // <ul> </li>Frankie</li> </ul>
-    liElement.textContent = storeLocations[l].cookiesPerHourList[k]; // <h2>Frankie</h2>
+    var tdElement = document.createElement('td'); // <li></li>
+    trElement.appendChild(tdElement); // <div> </h2>Frankie</h2> </div>
+    tdElement.textContent = storeLocations[l].cookiesPerHourList[k] // <h2>Frankie</h2>
   }
-  h2Element.textContent = storeLocations[l];
-  divElement.appendChild(h2Element); // appends everything
-  divElement.appendChild(ulElement); // appends everything
+  divElement.appendChild(trElement); // appends everything
 }
 
+divElement.appendChild(tableElement);
 
 
 var sectionElement = document.getElementById('profiles'); // <section id="profiles></section>"
