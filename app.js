@@ -102,7 +102,7 @@ for (var l = 0; l < storeLocations.length; l++) {
     liElement.textContent = storeLocations[l].cookiesPerHourList[k]; // <h2>Frankie</h2>
   }
   h2Element.textContent = storeLocations[l];
-  divElement.appendChild(h2Element); // appends everything
+  // divElement.appendChild(h2Element); // appends everything
   divElement.appendChild(ulElement); // appends everything
 }
 
