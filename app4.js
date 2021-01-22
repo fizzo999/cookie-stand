@@ -1,6 +1,6 @@
 'use strict';
 
-var elTarget = document.getElementById('profiles');
+var elTarget = document.getElementById('cookieTable');
 var table = document.createElement('table');
 elTarget.appendChild(table);
 var tableHead = document.createElement('thead');
@@ -38,8 +38,9 @@ function Stores(name, minCust, maxCust, avgCookies) {
 
 Stores.prototype.numOfCustomers = function () {
   // var totalCookiesPerDay = 0;
+  // console.log(hoursOfOperation);
   for (var i = 0; i < hoursOfOperation.length - 1; i++) {
-    var cookiesThisHour = Math.floor((Math.random() * (this.maxCust - this.minCust + 1) + this.minCust) * this.avgCookies);
+    var cookiesThisHour = Math.floor((Math.random() * ((this.maxCust - this.minCust) + 1) + this.minCust) * this.avgCookies);
     this.totalCookiesPerDay += cookiesThisHour;
     this.arrayOfHourlyCookies.push(cookiesThisHour);
   }
@@ -62,17 +63,22 @@ Stores.prototype.printTable = function () {
 
 // populate the footer row, with the totals per store, per hour (think of a loop within a loop)
 function createFooter() {
+  // var foot = document.createElement('tfoot');
+  // tableBody.appendChild(foot);
   var row = document.createElement('tr');
-  var nameCell = document.createElement('td');
   tableBody.appendChild(row);
+  var nameCell = document.createElement('td');
   nameCell.textContent = 'Totals';
   row.append(nameCell);
+
   // first start looping throuogh our total number of hours
   var totalOfTotals = 0;
   var hourlyTotal = 0;
   for (var i = 0; i < hoursOfOperation.length; i++) {
+
     // we just need to remember to reset at each hour
     hourlyTotal = 0;
+
     for (var j = 0; j < storeLocations.length; j++) {
       hourlyTotal += storeLocations[j].arrayOfHourlyCookies[i];
       totalOfTotals += storeLocations[j].arrayOfHourlyCookies[i];
@@ -84,8 +90,6 @@ function createFooter() {
   }
   // return totalOfTotals, hourlyTotal;
 }
-
-
 
 var seattle = new Stores('Seattle', 23, 65, 6.3);
 seattle.numOfCustomers();
@@ -104,9 +108,43 @@ lima.numOfCustomers();
 lima.printTable();
 
 var storeLocations = [seattle, tokyo, dubai, paris, lima];
-
-
 createFooter();
+var storeLocations2 = [];
+
+
+
+// event Listener for input form
+var formElement = document.getElementById('newStoreInputForm')
+
+formElement.addEventListener('submit', function (event) {
+  event.preventDefault();
+  var name = event.target.storeLocation.value
+  console.log(name);
+  var minCust = event.target.minCust.value
+  console.log(minCust);
+  var maxCust = event.target.maxCust.value
+  console.log(maxCust);
+  var avgCookies = event.target.avgCookies.value
+  console.log(avgCookies);
+
+  var newStoreFromConstructor = new Stores(name, minCust, maxCust, avgCookies)
+
+  storeLocations.push(newStoreFromConstructor);
+
+  console.log(storeLocations);
+
+  newStoreFromConstructor.numOfCustomers();
+
+  var removeEl = document.getElementsByTagName('tr')[storeLocations.length - 1];
+  console.log(removeEl);
+  var containerEl = removeEl.parentNode;
+  containerEl.removeChild(removeEl);
+
+  newStoreFromConstructor.printTable();
+
+  createFooter();
+
+})
 
 
 

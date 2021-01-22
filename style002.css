@@ -12,7 +12,7 @@ h1 {
   font-size: 3rem;
   text-align: center;
   background-color: rgb(245, 171, 146);
-  padding: 3rem 0;
+  padding: 1.0rem 0;
   border-bottom: coral solid 12px;
 }
 
@@ -26,14 +26,14 @@ a {
 }
 
 nav {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100vw;
   background-color: rgb(245, 171, 146);
   margin-top: 0;
   border-bottom: coral solid 12px;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 nav ol {
@@ -48,7 +48,7 @@ nav ol li {
   font-size: 1.5rem;
   border: 1px solid black;
   padding: 15px 50px;
-  margin: 20px 10px;
+  margin: 10px 10px;
   border-radius: 10px;
   background-color: rgb(238, 204, 193);
   font-weight: 900;
@@ -58,7 +58,7 @@ nav ol li:hover {
   background: coral;
   font-size: 1.5rem;
   padding: 15px 50px;
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
 
 a:hover {
@@ -82,9 +82,14 @@ img {
 
 
 /* sales page start */
-#profiles h2 {
+
+body {
+  height: 2500px;
+}
+
+#cookieTable h2 {
   position: relative;
-  top: 330px;
+  top: 200px;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
@@ -95,7 +100,7 @@ img {
 
 table {
   position: relative;
-  top: 400px;
+  top: 210px;
   background-color: rgb(248, 238, 215);
   border: 1px solid black;
   margin: 0 auto;
@@ -118,4 +123,52 @@ td {
   border: 1px solid black;
   padding: 10px 15px;
   text-align: right;
+}
+
+/* input form styling */
+#newStoreInputForm {
+  margin-top: 350px;
+    /* position: static; */
+    top: 300px;
+    text-align: center;
+    /* font-size: 2rem;
+    font-weight: 600; */
+}
+#newStoreInputForm fieldset {
+  width: 550px;
+  background-color: rgb(238, 204, 193);
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 16px;
+}
+
+#newStoreInputForm legend {
+  background-color: rgb(245, 171, 146);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 8px 20px;
+  margin-bottom: -10px;
+}
+
+#newStoreInputForm label {
+  /* float: left; */
+
+  font-size: 1.2rem;
+  /* padding: 20px 0; */
+}
+
+#newStoreInputForm input {
+  /* float: right; */
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+input:last-child {
+  padding: 20px 30px;
+  font-size: 35px;
 }

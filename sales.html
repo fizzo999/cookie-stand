@@ -19,28 +19,30 @@
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="sales.html">Sales</a></li>
+        <li><a href="#newStoreInputForm">New Store Input</a></li>
       </ol>
     </nav>
   </header>
   <main>
-    <section id="profiles">
+    <section id="cookieTable">
       <h2>Daily Cookie Sales for all Locations</h2>
-      <!-- 
-        ideally we want something that is organized like so
-        <div>
-          <h2>Mittens</h2>
-          <h3>Breed</h3>
-          <p>age</p>
-          <p>health history</p>
-          <ul>
-            <li>Personality Traits</li>
-          </ul>
-          <img src="some cat image">
-        </div>
-       -->
-
     </section>
-
+    <section>
+      <form action="" id="newStoreInputForm">
+        <fieldset>
+          <legend>New Cookie Stores Input Form</legend>
+          <label for="storeLocationLabel">store location</label><br>
+          <input type="text" name="storeLocation" id="storeLocationLabel"><br>
+          <label for="minCustLabel">minimum customers per hour</label><br>
+          <input type="text" name="minCust" id="minCustLabel"><br>
+          <label for="maxCustLabel">maximum customers per hour</label><br>
+          <input type="text" name="maxCust" id="maxCustLabel"><br>
+          <label for="avgCookiesLabel">average cookies sold per customer</label><br>
+          <input type="text" name="avgCookies" id="avgCookiesLabel"><br>
+          <input type="submit" name="submit" value="Submit new Store" class="inputBtn">
+        </fieldset>
+      </form>
+    </section>
   </main>
   <footer>
 
