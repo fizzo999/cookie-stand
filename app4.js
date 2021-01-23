@@ -40,7 +40,7 @@ Stores.prototype.numOfCustomers = function () {
   // var totalCookiesPerDay = 0;
   // console.log(hoursOfOperation);
   for (var i = 0; i < hoursOfOperation.length - 1; i++) {
-    var cookiesThisHour = Math.floor((Math.random() * ((this.maxCust - this.minCust) + 1) + this.minCust) * this.avgCookies);
+    var cookiesThisHour = Math.floor((((Math.random() + 1) * (this.maxCust - this.minCust)) + this.minCust) * this.avgCookies);
     this.totalCookiesPerDay += cookiesThisHour;
     this.arrayOfHourlyCookies.push(cookiesThisHour);
   }

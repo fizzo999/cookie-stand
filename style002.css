@@ -26,14 +26,14 @@ a {
 }
 
 nav {
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  left: 0; */
+  left: 0;
   width: 100vw;
   background-color: rgb(245, 171, 146);
   margin-top: 0;
   border-bottom: coral solid 12px;
-  /* z-index: 5; */
+  z-index: 5;
 }
 
 nav ol {
@@ -64,6 +64,12 @@ nav ol li:hover {
 a:hover {
   color: coral;
   color: #fff;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+
 }
 
 
@@ -115,6 +121,13 @@ tr:nth-child(odd) {
   background-color: rgb(245, 171, 146);
 }
 
+tr:last-child {
+  background-color: rgb(250, 209, 190);
+  font-weight: 600;
+
+}
+
+
 td:nth-of-type(1) {
   font-weight: 900;
 }
@@ -123,6 +136,16 @@ td {
   border: 1px solid black;
   padding: 10px 15px;
   text-align: right;
+}
+
+td:nth-of-type(16n) {
+  background-color: rgb(250, 209, 190);
+  font-weight: 900;
+}
+
+#hiddenAnchor {
+  height: 10px;
+  width: 100%;
 }
 
 /* input form styling */
