@@ -4,30 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- google fonts -->
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style002.css">
+  <title>Salmon Cookies</title>
 </head>
 
 <body>
-  <h1>
-    Cookies produced per hour per location
-  </h1>
-  <ol>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="sales.html">Sales</a></li>
-  </ol>
+  <header>
+    <nav>
+      <h1>
+        The Famous Salmon Cookie Company
+      </h1>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="#hiddenAnchor">New Store Input</a></li>
+      </ol>
+    </nav>
+  </header>
   <main>
+    <section id="cookieTable">
+      <h2>Daily Cookie Sales for all Locations</h2>
+    </section>
     <section>
-      <ul>
-
-      </ul>
+      <div id="hiddenAnchor"></div>
+      <form action="" id="newStoreInputForm">
+        <fieldset>
+          <legend>New Cookie Stores Input Form</legend>
+          <label for="storeLocationLabel">store location</label><br>
+          <input type="text" name="storeLocation" id="storeLocationLabel"><br>
+          <label for="minCustLabel">minimum customers per hour</label><br>
+          <input type="text" name="minCust" id="minCustLabel"><br>
+          <label for="maxCustLabel">maximum customers per hour</label><br>
+          <input type="text" name="maxCust" id="maxCustLabel"><br>
+          <label for="avgCookiesLabel">average cookies sold per customer</label><br>
+          <input type="text" name="avgCookies" id="avgCookiesLabel"><br>
+          <input type="submit" name="submit" value="Submit new Store" class="inputBtn">
+        </fieldset>
+      </form>
     </section>
   </main>
+  <div class="clear"></div>
+  <footer>
+    <img src="images/cookiemonster.jpg" alt="">
+    <p>Copyright &copy; 2021 Fizzo Pannosch</p>
+    <img src="images/cookiemonster.jpg" alt="">
 
-  <script src="app.js"></script>
+
+  </footer>
+  <script src="app4.js"></script>
 </body>
 
 </html>
