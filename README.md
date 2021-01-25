@@ -1,6 +1,10 @@
 # cookie-stand
 Salmon Cookies for Everyone
 
+### update 01/24/2021 -
+finish scaffolding html, images, styling w css
+final check both pages index and sales.html - looking good
+
 ### update 01/21/2021 -
 I am building on my time management efforts from yesterday:
 1.) 45min - read instructions thoroughly - construct entire input form
