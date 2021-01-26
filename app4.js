@@ -109,34 +109,35 @@ lima.printTable();
 
 var storeLocations = [seattle, tokyo, dubai, paris, lima];
 createFooter();
-var storeLocations2 = [];
+// var storeLocations2 = [];
 
 
 
 // event Listener for input form
 var formElement = document.getElementById('newStoreInputForm')
 
-formElement.addEventListener('submit', function (event) {
-  event.preventDefault();
-  var name = event.target.storeLocation.value
-  console.log(name);
-  var minCust = event.target.minCust.value
-  console.log(minCust);
-  var maxCust = event.target.maxCust.value
-  console.log(maxCust);
-  var avgCookies = event.target.avgCookies.value
-  console.log(avgCookies);
+formElement.addEventListener('submit', function (inputFormEvent) {
+  inputFormEvent.preventDefault();
 
-  var newStoreFromConstructor = new Stores(name, minCust, maxCust, avgCookies)
+  var name2 = inputFormEvent.target.storeLocation.value
+  console.log(name2);
+  var minCust2 = inputFormEvent.target.minCust.value
+  console.log(minCust2);
+  var maxCust2 = inputFormEvent.target.maxCust.value
+  console.log(maxCust2);
+  var avgCookies2 = inputFormEvent.target.avgCookies.value
+  console.log(avgCookies2);
+
+  var newStoreFromConstructor = new Stores(name2, minCust2, maxCust2, avgCookies2)
 
   storeLocations.push(newStoreFromConstructor);
 
-  console.log(storeLocations);
+  // console.log(storeLocations);
 
   newStoreFromConstructor.numOfCustomers();
-
+  // delete current totals row
   var removeEl = document.getElementsByTagName('tr')[storeLocations.length - 1];
-  console.log(removeEl);
+  // console.log(removeEl);
   var containerEl = removeEl.parentNode;
   containerEl.removeChild(removeEl);
 
