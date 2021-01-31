@@ -5,7 +5,15 @@
 
 body {
   background-color: rgb(241, 222, 216);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+
 
 
 h1 {
@@ -74,7 +82,7 @@ a:hover {
 }
 
 main {
-  width: 960px;
+  width: 1200px;
   margin: 0 auto;
   /* border: 1px solid black; */
   height: 2000px;
@@ -246,15 +254,18 @@ body {
   /* height: 2500px; */
 }
 
+
+
+
+
 #cookieTable h2 {
   position: relative;
   top: 200px;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
+
 }
-
-
 
 
 table {
@@ -262,8 +273,20 @@ table {
   top: 210px;
   background-color: rgb(248, 238, 215);
   border: 1px solid black;
-  margin: 0 auto;
+  padding: 12px;
+  /* width: 1200px; */
+  /* margin: 0 auto; */
   font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+td {
+  padding: 12px;
 }
 
 tr:nth-child(even) {
@@ -344,7 +367,8 @@ td:nth-of-type(16n) {
   border-radius: 8px;
 }
 
-input:last-child {
+input:last-of-type {
   padding: 20px 30px;
   font-size: 35px;
+  background-color: rgb(248, 238, 215);
 }

@@ -1,5 +1,10 @@
 # cookie-stand
-Salmon Cookies for Everyone
+Salmon Cookies for Everyone - this is a lab project for Codefellows 201 class - a fictional friend has an idea about Salmon Cookies and askes me to build a small simple website, display images. And have a second sales page where he wants me to display the outcome of a table:
+the table is generated form 5 stores, we know the location names, the minimum and maximum customers per hour and the average cookies that are being sold each day at each of the 5 locations.
+So I am to create 5 objects - first in literal notation and calculate the random per hour cookie sales for each hour and each location. He also wants me to include the total cookie sales for each location.
+Then in a seperate lab he asks me to put to use what I am learning at CodeFellows and wrap the 5 locations into a single constructor function and create the 5 store objects. as well as the calulate cookie sales for each hour and store them in an array that lives on each object.
+Then in another lab assignment our frined asks me to print these results to a table horizontally for each location, including the totals per store AND include a bottom row with hourly totals for all 5 locations.
+Finally our friend is so impressed with my abilities that he asks me if I could make an input form, style it to the theme of the salmon cookie company. In that form he wants to be able to put new storelocations and having the test data for min max customers per hour and avg cookies sold per hour he wants me to add functionality so that I delete the bottom row inside the table and amend it with the new store and re calculate the new totals.  
 
 ### update 01/24/2021 -
 finish scaffolding html, images, styling w css
