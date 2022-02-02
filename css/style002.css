@@ -8,20 +8,19 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 h1 {
   font-size: 3rem;
   text-align: center;
   background-color: rgb(245, 171, 146);
-  padding: 1.0rem 0;
+  padding: 1rem 0;
   border-bottom: coral solid 12px;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
-
 
 li {
   list-style: none;
@@ -73,8 +72,6 @@ a:hover {
   color: #fff;
 }
 
-
-
 .clear {
   height: 200px;
   width: 100%;
@@ -93,13 +90,12 @@ main {
   /* height: 350px; */
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   border-radius: 25px;
   /* border: lightcoral solid 1px; */
   padding: 40px 30px;
   margin: 0 auto;
-  
 }
 
 .salmonPix img {
@@ -114,25 +110,22 @@ main {
   margin: 2rem 0;
 }
 
-.cookieHistory  img {
+.cookieHistory img {
   width: 100%;
   display: block;
   margin: 0px auto 30px auto;
-
 }
 
 .cookieHistory p {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 30px;
-
 }
 
 .cookiePictures {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .cookiePictures img {
@@ -145,7 +138,6 @@ main {
   /* border: 1px grey solid; */
   background-color: rgb(182, 179, 179);
   padding: 64px 24px;
-
 }
 
 .cookiePictures img:last-child {
@@ -158,7 +150,6 @@ main {
   width: 100%;
   height: 200px;
   visibility: hidden;
-
 }
 
 #stores h3 {
@@ -166,14 +157,13 @@ main {
   font-size: 2rem;
   font-weight: 600;
   margin: 24px 0 0 0;
-
 }
 
 .storesContainer {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-  padding: 12px;  
+  padding: 12px;
 }
 
 .storesContainer ul {
@@ -196,13 +186,11 @@ main {
   text-align: center;
   font-size: 36px;
   font-weight: 900;
-
 }
 #tShirts img {
   margin: 24px;
   border-radius: 10px;
-  border: 3px rgba(255, 127, 80,0) solid;
-
+  border: 3px rgba(255, 127, 80, 0) solid;
 }
 
 #tShirts img:hover {
@@ -218,14 +206,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-/* position: relative;
+  /* position: relative;
   top: 250px; */
   margin-top: 250px;
   width: 100%;
   /* height: 100px; */
   background-color: rgb(245, 171, 146);
   border-top: coral solid 12px;
-
 }
 
 footer img {
@@ -241,11 +228,7 @@ footer p {
   font-size: 24px;
   font-weight: 900;
   text-align: center;
-
 }
-
-
-
 
 /* sales page start */
 
@@ -253,19 +236,13 @@ body {
   /* height: 2500px; */
 }
 
-
-
-
-
 #cookieTable h2 {
   position: relative;
   top: 200px;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
-
 }
-
 
 table {
   position: relative;
@@ -299,9 +276,7 @@ tr:nth-child(odd) {
 tr:last-child {
   background-color: rgb(250, 209, 190);
   font-weight: 600;
-
 }
-
 
 td:nth-of-type(1) {
   font-weight: 900;
@@ -326,10 +301,10 @@ td:nth-of-type(16n) {
 /* input form styling */
 #newStoreInputForm {
   margin-top: 350px;
-    /* position: static; */
-    top: 300px;
-    text-align: center;
-    /* font-size: 2rem;
+  /* position: static; */
+  top: 300px;
+  text-align: center;
+  /* font-size: 2rem;
     font-weight: 600; */
 }
 #newStoreInputForm fieldset {
